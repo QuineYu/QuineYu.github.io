@@ -3,15 +3,14 @@
 		<title> 天之苍苍 </title>
 		<meta charset="utf-8" />
 		<style type="text/css">
-			.bkg{position:fixed;top: 0;left: 0;width:100%;height:100%;z-index:-10;zoom: 1;
+			.bkg{position:fixed;top: 0;left: 0;width:100%;height:100%;z-index:0;zoom: 1;
 			      background-image: url('myimages/background.jpg');background-repeat: no-repeat;background-size: cover;
 			      background-position: center 0;
-			     pointer-events:none;
 			    }
-			.he{position: absolute;top:0;left: 0;right: 0;text-align:center;color:white;font-size:150%;}
-			.ph{text-align:center;font-family:times;color:gray;font-size:90%;}
+			.he{text-align:center;font-family:times;color:white;font-size:150%;z-index:2;}
+			.ph{text-align:center;font-family:times;color:gray;font-size:90%;z-index:1}
 			a{text-decoration:none}
-			.blog{position: absolute;left: 25%;right: 25%;}
+			.blog{position: absolute;left: 25%;right: 25%;z-index:3;}
 			time{position: absolute;right: 0;color:white;}
 			.footer{position: absolute;bottom:0;left: 0;right: 0;text-align:center;color:white;}
 		</style>
@@ -25,7 +24,6 @@
 				<!--<a href="./blogs/for_my_love.html" style="color:FF8000">For My Love</a>
 				<time>08/28-2023</time>
 				-->
-			
 			</div>
 			<div class="footer">
 				<a href="./daily" style="color:white">日月之行</a>&nbsp;&nbsp;&nbsp|&nbsp;&nbsp;&nbsp
