@@ -24,18 +24,6 @@ function loadExternalResource(url, type) {
     });
 }
 
-//加载背景特效canvas-nest
-function initBackgroundEffects() {
-    let tag = document.createElement("script");
-    tag.src = live2d_path + "js/canvas-nest.min.js";
-    tag.type = "text/javascript";
-    tag.setAttribute("color", "0,205,205");
-    tag.setAttribute("opacity", "0.9");
-    tag.setAttribute("zIndex", "-2");
-    tag.setAttribute("count", "150");
-    document.body.appendChild(tag);
-}
-
 //加载鼠标特效
 function initMouseEffects() {
     /* 鼠标特效 */
