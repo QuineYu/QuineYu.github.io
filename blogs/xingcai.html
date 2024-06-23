@@ -1,1 +1,62 @@
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> 星 彩 </title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			.bkg{position:fixed;top: 0;left: 0;width:100%;height:100%;z-index:-10;zoom: 1;
+			      background-image: url('../myimages/background.jpg');background-repeat: no-repeat;background-size: cover;
+			      background-position: center 0;
+			    }
+			.he{text-align:center;font-family:times;color:#FF8000;font-size:150%;z-index:2;}
+			.time{width: 100%;text-align:center;font-family:times;color:gray;font-size:90%;z-index:1;}
+			a{text-decoration:none}
+			.blog{position: absolute;left: 25%;right: 25%;z-index:3;}
+			.footer{position: absolute;bottom:0;left: 0;right: 0;text-align:center;color:white;}
+			.Audio{position: relative; width: 500px; margin: 0 auto;}
+			.pic{text-align: center; position: relative; width: 200px; height: 200px;left:150px;background-image: url('../myimages/photo1.jpg');background-repeat: no-repeat;background-size: 100% 100%;}
+			.pgs{width: 326px; margin: 0 auto 30px; background-color: #F5EDF3; text-align: center; position: relative; overflow: hidden; height: 25px;}
+			.pgs-play{position: absolute; top:0; left: 4.65%; width: 0; height: 100%; background-color: #FF8000; z-index: 3;}
+			.pgs img{width: 100%; position: relative; z-index: 4;}
+			.audio-name{position: absolute; top: 0; width: 100%; left: 0;text-align: center; color: #666; font-size: 12px;}
+			.controls{width: 100%; height: 40px; padding: 0; text-align: center;}
+			.play-pause{border: 0; outline: 0; padding: 0; width: 40px; height: 40px; margin: 0 28px; background: none; display: inline-block; vertical-align: middle;}
+			.icon-play{width: 40px; height: 40px; background: url(../myimages/play.png) no-repeat; display: block;background-size: 100% 100%}
+			.icon-pause{width: 40px; height: 40px; background: url(../myimages/pruse.png) no-repeat; display: block;background-size: 100% 100%}
+			.controls span{color: #b3b5b7; font-size: 12px; display: inline-block; width: 34px;}
+			.audio-time{display: inline-block; vertical-align: middle;}
+		</style>
+		
+	</head>
+
+	<body>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javaScript" src="./music.js"></script>
+		<div class="bkg">
+			<a href="../index.html" style="font-style:times;color:white">Yan's Blog</a>
+			<div class="he"><br> 星 彩 <br></div>
+			<div class="time"><br>06/06-2024<br></div>	
+			<br>
+			<div class="Audio">
+				<div class="pic"></div>
+				<br>
+				<audio id="audioTag" src="../myfiles/xyl.mp3" ></audio>
+				<div class="pgs">
+					<div class="pgs-play" id="progress" style="width: 20%;"></div>
+					<img src="../myimages/progress.png">
+	  			</div>
+  			  <div class="controls">
+  			      <span class="played-time">00:00</span>
+   			      <button class="play-pause" id="playPause"><span class="icon-btn icon-play"></span></button>
+  			      <span class="audio-time" id="audioTime">0</span>
+  			  </div>
+			</div>
+			
+			<div class="footer">
+				<a href="../daily" style="color:white">日月之行</a>&nbsp;&nbsp;&nbsp|&nbsp;&nbsp;&nbsp
+				<a href="../study" style="color:white">天之苍苍</a>
+			</div>
+		</div>
+	</body>
+</html>
