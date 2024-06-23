@@ -63,7 +63,7 @@ if (screen.width >= 50) {
         loadExternalResource(live2d_path + "js/waifu-tips.js", "js")
     ]).then(() => {
         initWidget({
-            waifuPath: live2d_path + "waifu.json",
+            waifuPath: live2d_path + "xingcai_vts/xingcai.model3.json",
             cdnPath: live2d_path
         });
         initMouseEffects();
