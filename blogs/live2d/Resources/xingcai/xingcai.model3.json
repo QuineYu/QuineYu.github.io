@@ -1,0 +1,28 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "xingcai.moc3",
+		"Textures": [
+			"xingcai.2048/texture_00.png"
+		],
+		"Physics": "xingcai.physics3.json",
+		"DisplayInfo": "xingcai.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeROpen",
+				"ParamEyeRSmile",
+				"ParamEyeBallX",
+				"ParamEyeBallY"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}
